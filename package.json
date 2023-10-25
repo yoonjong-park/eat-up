@@ -1,6 +1,7 @@
 {
   "name": "eat-up",
   "version": "0.1.0",
+  "author": "yoonjong.park",
   "private": true,
   "scripts": {
     "dev": "next dev",
