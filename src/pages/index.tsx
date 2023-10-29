@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1>지도 페이지</h1>
+      <h1 className="font-bold">지도 페이지</h1>
       <ul>
         <li>
           <Link href="/stores">맛집 목록</Link>
@@ -24,7 +24,7 @@ export default function Home() {
           <Link href="/users/mypage">마이 페이지</Link>
         </li>
         <li>
-          <Link href="/users/login/likes">찜한 맛집</Link>
+          <Link href="/users/likes">찜한 맛집</Link>
         </li>
       </ul>
     </>
