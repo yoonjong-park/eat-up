@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-export default function Map() {
+export default function KakaoMap() {
   const loadKakaoMap = () => {
     window.kakao.maps.load(() => {
       const mapContainer = document.getElementById("map");
