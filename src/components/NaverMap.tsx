@@ -7,6 +7,7 @@ declare global {
   interface Window {
     naver: any;
   }
+  const naver: any;
 }
 
 export default function NaverMap() {
@@ -23,7 +24,7 @@ export default function NaverMap() {
       <Script
         strategy="afterInteractive"
         type="text/javascript"
-        src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT}&submodules=panorama&autoload=false`}
+        src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT_ID}&submodules=panorama&autoload=false`}
         onReady={loadNaverMap}
       />
       <div id="map" className="w-full h-screen"></div>

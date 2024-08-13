@@ -7,6 +7,7 @@ declare global {
   interface Window {
     kakao: any;
   }
+  const kakao: any;
 }
 
 export default function KakaoMap() {
@@ -25,7 +26,7 @@ export default function KakaoMap() {
       <Script
         strategy="afterInteractive"
         type="text/javascript"
-        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_MAP_CLIENT}&autoload=false`}
+        src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_MAP_CLIENT_ID}&autoload=false`}
         onReady={loadKakaoMap}
       />
       <div id="map" className="w-full h-screen"></div>
