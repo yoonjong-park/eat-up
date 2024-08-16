@@ -31,24 +31,3 @@ export default function NaverMap() {
     </>
   );
 }
-
-// export default function KakaoMap() {
-//   // const id = this.props.itemData.id;
-//   return (
-//     <NavermapsProvider
-//       ncpClientId={process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT}
-//       // error={<p>Maps Load Error</p>}
-//       // loading={<p>Maps Loading...</p>}
-//     >
-//       <MapDiv
-//         mapDivId={"react-naver-map"}
-//         style={{
-//           width: "100%",
-//           height: "100vh",
-//         }}
-//         defaultCenter={{ lat: 37.554722, lng: 126.970833 }}
-//         defaultZoom={10}
-//       />
-//     </NavermapsProvider>
-//   );
-// }
