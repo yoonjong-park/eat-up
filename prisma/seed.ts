@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 async function seedData() {
   // seed 코드 작성
 
-  data?.["DATA"]?.map(async (store: any) => {
+  const lognData = data?.["DATA"]?.map((store: any) => {
     const storeData = {
       phone: store?.tel_no,
       address: store?.rdn_code_nm,
@@ -17,10 +17,11 @@ async function seedData() {
       storeType: store?.cob_code_nm,
       foodCertifyName: store?.crtfc_gbn_nm,
     };
-    const result = await prisma.store.create({
-      data: storeData,
-    });
-    console.log("result=", result);
+    return storeData;
+  });
+
+  await prisma.store.createMany({
+    data: lognData as any,
   });
 }
 
